@@ -4,9 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Student Info</title>
+    <link rel="icon" type="image/png" href ="./bg-image/bird.png">
 </head>
 <body>
-    <H3>Welcome to Index page!!</H3>
+    <H3>HTML Form! &#129409;</H3>
+    <form action="mypage.html" method="post">
+        <fieldset>
+            <legend>User Information</legend>
+            <!--Input type text for username -->
+        <label for ="uname">User Name:</label>
+        <input type="text" id="uname" name="uname" placeholder="Enter user name"><br><br>
+
+          <!--Input type password for password -->
+        <label for ="pwd">Password:</label>
+        <input type="password" id="pwd" name="pwd" placeholder="Enter password"><br><br>
+          <!--Input type number for age -->
+        <label for ="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age"><br><br>
+
+         <!--Input type email for email -->
+         <label for ="email">Email:</label>
+         <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+         Address: <textarea rows="3" cols="20"></textarea><br><br>
+        <!--Input type date for date of birth -->
+         <label for ="dob">Date of Birth:</label>
+         <input type="date" id="dob" name="dob" min="1950-01-01" max="2020-01-01"><br><br>
+
+         <input type="file" id="file1" name="myFile"><br><br>
+        <label for ="male">Gender:</label>
+        <input type="radio" id="male" name="gender">Male
+        <input type="radio" id="female" name="gender" checked>Female
+        <input type="radio" id="others" name="gender">Others<br><br>
+        <label for ="city">City:</label>
+        <select name="city">
+            <option>Milwaukee</option>
+            <option>Chicago</option>
+            <option>Perth</option>
+            <option>London</option>
+        </select><br><br>
+        <input type="checkbox" id = "chk1" name="sports" value="sports" checked>Sports
+        <input type="checkbox" id = "chk2" name="reading" value="reading">Reading
+        <input type="checkbox" id = "chk1" name="sports" value="music">Music
+        <input type="checkbox" id = "chk1" name="sports" value="softwares">softwares
+        <br><br>
+        <input type="submit" value = "Log in">
+    </fieldset>
+    </form>
 </body>
 </html>
