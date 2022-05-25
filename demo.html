@@ -5,6 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+    <style>
+        a {
+            text-decoration: none;
+            color:burlywood
+        }
+
+        h2 {
+            text-transform: uppercase;
+            text-shadow: 2px 2px 5px red;
+        }
+
+        .boldfont {
+            font-weight: bold;
+        }
+
+        .graybackground{
+            background-color: gray;
+        }
+
+        p.graybackground{
+            text-transform: uppercase;
+        }
+
+        a, tr {
+            background-color: aquamarine;
+        }
+
+        div p {
+            text-decoration: underline;
+        }
+
+        div > p {
+            text-shadow: 2px 2px red;
+        }
+
+        div + p {
+            background-color: aquamarine;
+        }
+
+        p ~ ul {
+            text-transform: uppercase;
+        }
+
+        #helveticafont {
+            font-family: lucida sans, sans-serif, arial;
+            font-style: oblique;
+            font-variant: small-caps;
+        }
+
+        #sectionA{
+            font-style: oblique;
+            font-weight: bolder;
+            font-size: 1em;
+        }
+        
+        #sofiafont {
+            font-family: 'Sofia', arial, sans-serif;
+        }
+       
+  
+    </style>
 </head>
 <body>
     <header>
@@ -17,12 +79,30 @@
 
     <h2>Great to code in VS code</h2>
     <p>Such a beautiful thing</p>
-    <p>
+    <p class = "boldfont graybackground">
         Let's make <abbr title="United States of America">USA</abbr> great again!!
     </p>
+    <div>
+        <p class = "boldfont">
+            Chemical formula of water is H<sub>2</sub>O
+        </p>
+       
+        <h1>part of testing</h1>
+        <span>  
+            <p>parent child </p> 
+        </span>
+       
+    </div>
     <p>
-        Chemical formula of water is H<sub>2</sub>O
+        Fed up of testing CSS
     </p>
+    <p>
+        Fed up of testing CSS2
+    </p>
+    <p>
+        Fed up of testing CSS3
+    </p>
+    <h3 class = "graybackground">Header for class selector</h3>
 
     <table border="1">
         <caption>Life Expectancy by current age</caption>
@@ -62,6 +142,11 @@
         <li>Tea</li>
         <li>Milk</li>
     </ol>
+    <ul type="circle">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
     <dl>
         <dt>Coffee</dt>
         <dd>-black hot or cold</dd>
@@ -69,7 +154,7 @@
         <dd>-White hot or cold</dd>
     </dl>
 <hr>
-
+   
     <p id="sectionA">
         The MARS Returnship program is an on-ramp for women looking to restart their careers in technology following a gap in employment. We provide on-the-job training, mentorship, and a partnership approach to prepare our cohorts to successfully rejoin the workforce.
 
@@ -78,7 +163,16 @@
         Our exceptional graduates and partner companies enjoy a customized experience to meet the unique technical and interpersonal needs of all involved.
     </p>
     <img src="./bg-image/birds.jpg" height="100" width="150" alt="Birds image"><br>
-    
+   
+    <p id="helveticafont">
+        Testing the font property in CSS
+    </p>
+
+    <p id="sofiafont" class="font-effect-fire">
+        Testing google api for font
+    </p>
+
+
     <footer>
         Copywright 2022
     </footer>

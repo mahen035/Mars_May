@@ -1,0 +1,14 @@
+#para1 {
+    color:#ed5c5c;
+    background-color: rgb(255,255,255);
+    text-align: right;
+}
+
+#justify {
+    text-align: justify;
+}
+
+#rtl {
+    direction: rtl;
+    text-decoration: underline;
+}
