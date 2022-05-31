@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       div{
+           width: 120px;
+           height: 60px;
+           background-color: darksalmon;
+           position:relative;
+           animation: move 6s infinite
+       }
+
+       #one {
+           animation-timing-function: linear;
+       }
+       #two {
+           animation-timing-function: ease;
+       }
+       #three {
+           animation-timing-function: ease-in;
+       }
+       #four {
+           animation-timing-function: ease-out;
+       }
+       #five {
+           animation-timing-function: ease-in-out;
+       }
+        @keyframes demo {
+            from {background-color : red;}
+            to {background-color:blue;}
+        }
+        @keyframes move {
+            from {left: 0px;}
+            to {left: 400px;}
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Animation</h1>
+    <div>
+        Animation using CSS
+    </div>
+    <div id = "one">LINEAR</div>
+    <div id = "two">EASE</div>
+    <div id = "three">EASE-IN</div>
+    <div id = "four">EASE-OUT</div>
+    <div id = "five">EASE-IN-OUT</div>
+</body>
+</html>
